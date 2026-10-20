@@ -6,7 +6,7 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'index.html'),
-        templateOne: resolve(__dirname, 'rahul_mehandi_art/index.html'),
+        templateOne: resolve(__dirname, 'template-one/index.html'),
         templateTwo: resolve(__dirname, 'template-two/index.html'),
       },
     },
