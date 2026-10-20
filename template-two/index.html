@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Bridal Mehndi Artist | Artistry Woven In Tradition</title>
+    <meta name="description" content="Discover intricate bridal mehndi, traditional henna artistry, and personalized designs for weddings and special occasions. Enquire about your appointment today.">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Luxury Bridal Mehndi Artist">
+    <meta property="og:description" content="Exquisite mehndi artistry crafted with patience, precision, and a deep love for tradition.">
+    <meta property="og:type" content="website">
+    <meta name="theme-color" content="#FAF6EF">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        ivory: '#FAF6EF',
+                        champagne: '#F0E4D2',
+                        burgundy: '#4A1521', /* Deepened for higher luxury contrast */
+                        wine: '#2B0E15',
+                        gold: '#C4A471', /* Slightly richer gold */
+                        lightgold: '#E3D0B1',
+                        charcoal: '#1A1818',
+                        warmgray: '#6B635E',
+                        lightsec: '#FDFBF7',
+                        darksec: '#1C1013',
+                        whatsapp: '#25D366'
+                    },
+                    fontFamily: {
+                        serif: ['"Cormorant Garamond"', 'serif'],
+                        sans: ['"DM Sans"', 'sans-serif'],
+                    },
+                    transitionTimingFunction: {
+                        'elegant': 'cubic-bezier(0.16, 1, 0.3, 1)', /* Smoother custom ease */
+                    },
+                    animation: {
+                        'marquee': 'marquee 25s linear infinite',
+                        'spin-slow': 'spin 15s linear infinite',
+                    },
+                    keyframes: {
+                        marquee: {
+                            '0%': { transform: 'translateX(0%)' },
+                            '100%': { transform: 'translateX(-100%)' }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Base and Custom Utilities */
+        body { 
+            background-color: #FAF6EF; 
+            color: #1A1818; 
+            overflow-x: hidden; 
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        ::selection { background-color: #C4A471; color: #fff; }
+        
+        /* Subtle Noise Overlay for Premium Paper Feel */
+        .noise-overlay {
+            position: fixed; top: 0; left: 0; width: 100vw; height: 100vh;
+            pointer-events: none; z-index: 9999; opacity: 0.03;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+        }
+
+        /* Intro Animation */
+        #intro-overlay {
+            transition: opacity 1.2s cubic-bezier(0.16, 1, 0.3, 1), visibility 1.2s;
+        }
+        .draw-line {
+            stroke-dasharray: 1000; stroke-dashoffset: 1000;
+            animation: draw 2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+        @keyframes draw { to { stroke-dashoffset: 0; } }
+        
+        /* Scroll Reveal Animations */
+        .reveal-hidden {
+            opacity: 0; transform: translateY(40px);
+            transition: opacity 1s cubic-bezier(0.16, 1, 0.3, 1), transform 1s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .reveal-active { opacity: 1; transform: translateY(0); }
+        @media (prefers-reduced-motion: reduce) {
+            .reveal-hidden { transition: none; opacity: 1; transform: none; }
+        }
+
+        /* Editorial Image Framing */
+        .editorial-frame {
+            position: relative;
+        }
+        .editorial-frame::after {
+            content: ''; position: absolute; inset: 12px;
+            border: 1px solid rgba(250, 246, 239, 0.6);
+            pointer-events: none; transition: all 0.5s ease;
+            z-index: 10;
+        }
+        .editorial-frame.dark-border::after {
+            border-color: rgba(196, 164, 113, 0.3);
+        }
+        .group:hover .editorial-frame::after {
+            inset: 6px; border-color: rgba(196, 164, 113, 0.8);
+        }
+        .img-zoom { transition: transform 1.2s cubic-bezier(0.16, 1, 0.3, 1); }
+        .group:hover .img-zoom { transform: scale(1.04); }
+
+        /* Typography & Underlines */
+        .link-underline { position: relative; display: inline-block; }
+        .link-underline::after {
+            content: ''; position: absolute; width: 100%; transform: scaleX(0);
+            height: 1px; bottom: -2px; left: 0; background-color: currentColor;
+            transform-origin: bottom right; transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .link-underline:hover::after {
+            transform: scaleX(1); transform-origin: bottom left;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: #FAF6EF; }
+        ::-webkit-scrollbar-thumb { background: #C4A471; }
+        ::-webkit-scrollbar-thumb:hover { background: #4A1521; }
+
+        /* Layout & Interactions */
+        #mobile-menu { transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1); }
+        .menu-open { transform: translateY(0) !important; }
+        #lightbox { transition: opacity 0.4s ease; }
+        #lightbox.active { opacity: 1; pointer-events: auto; }
+        
+        .marquee-container {
+            display: flex; white-space: nowrap; overflow: hidden;
+            border-top: 1px solid rgba(196, 164, 113, 0.2);
+            border-bottom: 1px solid rgba(196, 164, 113, 0.2);
+        }
+        
+        .masonry-grid {
+            column-count: 1; column-gap: 1.5rem;
+        }
+        @media (min-width: 640px) { .masonry-grid { column-count: 2; } }
+        @media (min-width: 1024px) { .masonry-grid { column-count: 3; } }
+        .masonry-item { break-inside: avoid; margin-bottom: 1.5rem; }
+    </style>
+</head>
+<body class="font-sans antialiased text-charcoal flex flex-col min-h-screen">
+    <div class="noise-overlay"></div>
+
+    <div id="intro-overlay" class="fixed inset-0 z-[100] bg-ivory flex flex-col items-center justify-center">
+        <div class="relative flex flex-col items-center p-12 lg:p-24">
+            <svg class="w-20 h-20 md:w-24 md:h-24 mb-8 text-gold" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Abstract Mandala/Floral Motif -->
+                <path class="draw-line" d="M50 5 C 65 25, 95 35, 95 50 C 95 65, 65 75, 50 95 C 35 75, 5 65, 5 50 C 5 35, 35 25, 50 5 Z" stroke="currentColor" stroke-width="1" stroke-linecap="round"/>
+                <path class="draw-line" d="M50 20 C 60 35, 80 40, 80 50 C 80 60, 60 65, 50 80 C 40 65, 20 60, 20 50 C 20 40, 40 35, 50 20 Z" stroke="currentColor" stroke-width="0.5" stroke-dasharray="2 2"/>
+                <circle class="draw-line" cx="50" cy="50" r="5" fill="currentColor"/>
+            </svg>
+            <h1 class="font-serif text-4xl md:text-6xl text-burgundy tracking-[0.15em] uppercase mb-6 opacity-0 transition-opacity duration-1000 delay-500 font-light" id="intro-title">Anaya</h1>
+            <div class="w-px h-12 bg-gold mb-6 opacity-0 transition-opacity duration-1000 delay-700" id="intro-divider"></div>
+            <p class="font-sans text-xs tracking-[0.3em] text-warmgray uppercase opacity-0 transition-opacity duration-1000 delay-1000" id="intro-tagline">Artistry Woven In Tradition</p>
+        </div>
+    </div>
+
+    <header id="main-header" class="fixed w-full top-0 z-50 transition-all duration-500 bg-transparent py-6">
+        <div class="max-w-[90rem] mx-auto px-6 md:px-12 flex justify-between items-center">
+            <!-- Desktop Nav Left -->
+            <nav class="hidden lg:flex items-center space-x-10 w-1/3">
+                <a href="#about" class="text-xs uppercase tracking-[0.2em] text-charcoal hover:text-gold transition-colors link-underline">The Artist</a>
+                <a href="#services" class="text-xs uppercase tracking-[0.2em] text-charcoal hover:text-gold transition-colors link-underline">Services</a>
+            </nav>
+
+            <!-- Logo -->
+            <div class="w-1/3 flex justify-start lg:justify-center">
+                <a href="#" class="font-serif text-3xl md:text-4xl tracking-[0.15em] text-burgundy uppercase z-50">Anaya</a>
+            </div>
+            
+            <!-- Desktop Nav Right -->
+            <nav class="hidden lg:flex items-center justify-end space-x-10 w-1/3">
+                <a href="#gallery" class="text-xs uppercase tracking-[0.2em] text-charcoal hover:text-gold transition-colors link-underline">Portfolio</a>
+                <a href="#booking" class="text-[10px] tracking-[0.2em] uppercase bg-burgundy text-ivory px-6 py-3 hover:bg-wine transition-colors duration-300">Enquire Now</a>
+            </nav>
+
+            <!-- Mobile Toggle -->
+            <button id="mobile-toggle" class="lg:hidden z-50 p-2 focus:outline-none flex flex-col gap-1.5" aria-label="Toggle Menu">
+                <span class="block w-6 h-[1px] bg-burgundy transition-transform duration-300 origin-center"></span>
+                <span class="block w-6 h-[1px] bg-burgundy transition-opacity duration-300"></span>
+                <span class="block w-6 h-[1px] bg-burgundy transition-transform duration-300 origin-center"></span>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Overlay -->
+        <div id="mobile-menu" class="fixed inset-0 bg-lightsec z-40 transform -translate-y-full flex flex-col justify-center items-center h-screen w-screen">
+            <nav class="flex flex-col items-center space-y-10 text-center">
+                <a href="#about" class="mobile-link font-serif text-4xl italic text-burgundy hover:text-gold transition-colors">The Artist</a>
+                <a href="#services" class="mobile-link font-serif text-4xl italic text-burgundy hover:text-gold transition-colors">Services</a>
+                <a href="#bridal" class="mobile-link font-serif text-4xl italic text-burgundy hover:text-gold transition-colors">Bridal Couture</a>
+                <a href="#gallery" class="mobile-link font-serif text-4xl italic text-burgundy hover:text-gold transition-colors">Portfolio</a>
+                <div class="w-px h-12 bg-gold/50 my-2"></div>
+                <a href="#booking" class="mobile-link text-xs tracking-[0.2em] uppercase bg-transparent text-burgundy px-8 py-4 border border-burgundy hover:bg-burgundy hover:text-ivory transition-all duration-300">Book Appointment</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        <section id="hero" class="relative min-h-screen flex items-center pt-32 pb-16 overflow-hidden bg-ivory">
+            <div class="max-w-[90rem] mx-auto px-6 md:px-12 w-full grid lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+                
+                <!-- Text Content -->
+                <div class="lg:col-span-5 z-10 reveal-hidden pt-10 lg:pt-0">
+                    <div class="flex items-center gap-4 mb-8">
+                        <span class="w-8 h-px bg-gold"></span>
+                        <span class="text-[10px] tracking-[0.3em] text-gold uppercase font-medium">Bespoke Henna Artistry</span>
+                    </div>
+                    <h1 class="font-serif text-6xl md:text-7xl lg:text-[5.5rem] text-burgundy leading-[1.05] mb-8">
+                        Where Tradition <br>Becomes <i class="font-light text-gold">Timeless Art.</i>
+                    </h1>
+                    <p class="text-warmgray text-base md:text-lg max-w-md leading-relaxed mb-12 font-light">
+                        Discover exquisite mehndi artistry crafted with patience, precision, and a deep love for tradition. Every motif is a piece of your story.
+                    </p>
+                    <div class="flex flex-col sm:flex-row items-start sm:items-center gap-8">
+                        <a href="#booking" class="text-xs tracking-[0.2em] uppercase bg-burgundy text-ivory px-10 py-4 hover:bg-wine transition-colors duration-300 w-full sm:w-auto text-center relative group overflow-hidden">
+                            <span class="relative z-10">Reserve Your Date</span>
+                            <div class="absolute inset-0 bg-charcoal transform scale-x-0 origin-left group-hover:scale-x-100 transition-transform duration-500 ease-elegant"></div>
+                        </a>
+                        <a href="#gallery" class="text-xs tracking-[0.2em] uppercase text-charcoal link-underline py-2 flex items-center gap-3 group">
+                            Explore Portfolio
+                            <svg class="w-4 h-4 transform group-hover:translate-x-2 transition-transform duration-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Image Composition -->
+                <div class="lg:col-span-7 relative h-[600px] md:h-[800px] w-full reveal-hidden" style="transition-delay: 0.2s;">
+                    <!-- Background Portrait -->
+                    <div class="absolute right-0 top-0 w-[85%] md:w-[75%] h-[90%] group editorial-frame dark-border z-0">
+                        <div class="w-full h-full overflow-hidden bg-champagne">
+                            <img src="https://images.pexels.com/photos/36354616/pexels-photo-36354616.jpeg?auto=compress&cs=tinysrgb&w=1400" alt="Exquisite intricate bridal mehndi on hands" class="w-full h-full object-cover img-zoom">
+                        </div>
+                    </div>
+                    <!-- Overlapping Foreground Detail -->
+                    <div class="absolute left-0 bottom-0 w-[55%] md:w-[45%] h-[55%] z-10 group editorial-frame shadow-2xl bg-ivory p-2">
+                        <div class="w-full h-full overflow-hidden">
+                            <img src="https://images.pexels.com/photos/33088135/pexels-photo-33088135.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="Close up detail of traditional Indian bridal henna" class="w-full h-full object-cover img-zoom">
+                        </div>
+                    </div>
+                    <!-- Decorative Floating Element -->
+                    <div class="absolute left-[40%] top-[10%] w-32 h-32 hidden md:flex items-center justify-center animate-spin-slow z-20 pointer-events-none">
+                         <svg viewBox="0 0 100 100" fill="none" class="w-full h-full text-gold opacity-60">
+                             <path d="M50 0 C 50 50, 100 50, 100 50 C 100 50, 50 50, 50 100 C 50 100, 50 50, 0 50 C 0 50, 50 50, 50 0 Z" fill="currentColor"/>
+                         </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="marquee-container bg-lightsec py-5">
+            <div class="animate-marquee flex items-center space-x-12 shrink-0">
+                <span class="text-xs tracking-[0.3em] uppercase text-gold font-medium">Bridal Couture</span>
+                <span class="w-1.5 h-1.5 rounded-full bg-burgundy/30"></span>
+                <span class="text-xs tracking-[0.3em] uppercase text-charcoal font-medium">Bespoke Designs</span>
+                <span class="w-1.5 h-1.5 rounded-full bg-burgundy/30"></span>
+                <span class="text-xs tracking-[0.3em] uppercase text-gold font-medium">Intricate Detailing</span>
+                <span class="w-1.5 h-1.5 rounded-full bg-burgundy/30"></span>
+                <span class="text-xs tracking-[0.3em] uppercase text-charcoal font-medium">Premium Organic Henna</span>
+                <span class="w-1.5 h-1.5 rounded-full bg-burgundy/30"></span>
+                <span class="text-xs tracking-[0.3em] uppercase text-gold font-medium">Global Travel Available</span>
+                <span class="w-1.5 h-1.5 rounded-full bg-burgundy/30"></span>
+            </div>
+            <!-- Duplicate for seamless loop -->
+            <div class="animate-marquee flex items-center space-x-12 shrink-0 ml-12">
+                <span class="text-xs tracking-[0.3em] uppercase text-gold font-medium">Bridal Couture</span>
+                <span class="w-1.5 h-1.5 rounded-full bg-burgundy/30"></span>
+                <span class="text-xs tracking-[0.3em] uppercase text-charcoal font-medium">Bespoke Designs</span>
+                <span class="w-1.5 h-1.5 rounded-full bg-burgundy/30"></span>
+                <span class="text-xs tracking-[0.3em] uppercase text-gold font-medium">Intricate Detailing</span>
+                <span class="w-1.5 h-1.5 rounded-full bg-burgundy/30"></span>
+                <span class="text-xs tracking-[0.3em] uppercase text-charcoal font-medium">Premium Organic Henna</span>
+                <span class="w-1.5 h-1.5 rounded-full bg-burgundy/30"></span>
+                <span class="text-xs tracking-[0.3em] uppercase text-gold font-medium">Global Travel Available</span>
+                <span class="w-1.5 h-1.5 rounded-full bg-burgundy/30"></span>
+            </div>
+        </div>
+
+        <section id="about" class="py-24 md:py-40 bg-ivory relative">
+            <div class="absolute right-0 top-0 w-1/3 h-full bg-lightsec/50 pointer-events-none"></div>
+            <div class="max-w-[90rem] mx-auto px-6 md:px-12 grid lg:grid-cols-2 gap-16 lg:gap-24 items-center relative z-10">
+                <div class="order-2 lg:order-1 relative group reveal-hidden">
+                    <div class="aspect-[4/5] w-full md:w-[85%] mx-auto editorial-frame dark-border bg-champagne">
+                        <div class="w-full h-full overflow-hidden">
+                            <img src="https://images.pexels.com/photos/36216937/pexels-photo-36216937.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Artist applying exquisite mehndi" class="w-full h-full object-cover img-zoom grayscale hover:grayscale-0 transition-all duration-1000">
+                        </div>
+                    </div>
+                </div>
+                <div class="order-1 lg:order-2 reveal-hidden">
+                    <h2 class="font-serif text-5xl md:text-6xl text-burgundy mb-10 leading-[1.1]">An Artist's Hands.<br><i class="text-gold font-light">A Bride's Forever Memory.</i></h2>
+                    <div class="space-y-6 text-warmgray font-light leading-relaxed mb-12 text-lg">
+                        <p>Every mehndi design begins with a story.</p>
+                        <p>Inspired by tradition and shaped by individual creativity, our artistry brings together intricate patterns, graceful details, and thoughtful personalization.</p>
+                        <p>From the first consultation to the final finishing touch, every design is created to make your celebration feel uniquely yours. We believe that mehndi is not just preparation, but a meaningful ritual honoring beauty, love, and transition.</p>
+                    </div>
+                    <div class="border-l border-gold pl-6 py-2 mb-10">
+                        <p class="font-serif text-2xl text-charcoal italic leading-relaxed">"Beauty lies in the patience of the craft, woven delicately into the canvas of the skin."</p>
+                    </div>
+                    <a href="#services" class="text-xs tracking-[0.2em] uppercase text-charcoal link-underline py-1">Discover Our Expertise</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="py-24 md:py-32 bg-lightsec border-y border-gold/10">
+            <div class="max-w-[90rem] mx-auto px-6 md:px-12">
+                <div class="flex flex-col md:flex-row justify-between items-end mb-20 reveal-hidden gap-8">
+                    <div class="max-w-2xl">
+                        <h2 class="font-serif text-5xl md:text-6xl text-burgundy mb-6 leading-tight">Artistry for <br><i class="font-light text-gold">Every Occasion</i></h2>
+                        <p class="text-warmgray font-light text-lg">Thoughtfully crafted designs for your most meaningful celebrations.</p>
+                    </div>
+                    <a href="#booking" class="text-xs tracking-[0.2em] uppercase text-charcoal link-underline py-2 shrink-0">Request Consultation</a>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-16">
+                    <!-- Service 1 -->
+                    <div class="group reveal-hidden cursor-pointer">
+                        <div class="aspect-[3/4] mb-8 relative editorial-frame dark-border bg-ivory">
+                            <div class="w-full h-full overflow-hidden">
+                                <img src="https://images.pexels.com/photos/18066564/pexels-photo-18066564.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="Bridal Mehndi with jewelry" class="w-full h-full object-cover img-zoom">
+                            </div>
+                            <div class="absolute inset-0 bg-wine/10 group-hover:bg-transparent transition-colors duration-700"></div>
+                        </div>
+                        <span class="block text-[10px] tracking-[0.3em] text-gold uppercase mb-3">01</span>
+                        <h3 class="font-serif text-3xl text-burgundy mb-4 italic">Bridal Mehndi</h3>
+                        <p class="text-warmgray font-light mb-6 leading-relaxed">Intricate, bespoke bridal patterns designed to complement your personal style, heritage, and wedding aesthetics.</p>
+                        <button onclick="prefillBooking('Bridal Mehndi')" class="text-xs tracking-[0.2em] uppercase text-charcoal hover:text-gold transition-colors flex items-center gap-2 group-hover:translate-x-2 duration-300">
+                            Enquire Now <span class="text-gold">&rarr;</span>
+                        </button>
+                    </div>
+
+                    <!-- Service 2 -->
+                    <div class="group reveal-hidden cursor-pointer" style="transition-delay: 0.1s;">
+                        <div class="aspect-[3/4] mb-8 relative editorial-frame dark-border bg-ivory">
+                            <div class="w-full h-full overflow-hidden">
+                                <img src="https://images.pexels.com/photos/12426868/pexels-photo-12426868.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="Minimal Engagement Mehndi" class="w-full h-full object-cover img-zoom">
+                            </div>
+                            <div class="absolute inset-0 bg-wine/10 group-hover:bg-transparent transition-colors duration-700"></div>
+                        </div>
+                        <span class="block text-[10px] tracking-[0.3em] text-gold uppercase mb-3">02</span>
+                        <h3 class="font-serif text-3xl text-burgundy mb-4 italic">Engagement</h3>
+                        <p class="text-warmgray font-light mb-6 leading-relaxed">Elegant, refined, and minimal designs perfect for engagement ceremonies and intimate pre-wedding celebrations.</p>
+                        <button onclick="prefillBooking('Engagement Mehndi')" class="text-xs tracking-[0.2em] uppercase text-charcoal hover:text-gold transition-colors flex items-center gap-2 group-hover:translate-x-2 duration-300">
+                            Enquire Now <span class="text-gold">&rarr;</span>
+                        </button>
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div class="group reveal-hidden cursor-pointer" style="transition-delay: 0.2s;">
+                        <div class="aspect-[3/4] mb-8 relative editorial-frame dark-border bg-ivory">
+                            <div class="w-full h-full overflow-hidden">
+                                <img src="https://images.pexels.com/photos/33452609/pexels-photo-33452609.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="Festive Traditional Mehndi" class="w-full h-full object-cover img-zoom">
+                            </div>
+                            <div class="absolute inset-0 bg-wine/10 group-hover:bg-transparent transition-colors duration-700"></div>
+                        </div>
+                        <span class="block text-[10px] tracking-[0.3em] text-gold uppercase mb-3">03</span>
+                        <h3 class="font-serif text-3xl text-burgundy mb-4 italic">Festive & Party</h3>
+                        <p class="text-warmgray font-light mb-6 leading-relaxed">Beautiful traditional and contemporary patterns tailored for festivals, family gatherings, and guests.</p>
+                        <button onclick="prefillBooking('Festive & Party Mehndi')" class="text-xs tracking-[0.2em] uppercase text-charcoal hover:text-gold transition-colors flex items-center gap-2 group-hover:translate-x-2 duration-300">
+                            Enquire Now <span class="text-gold">&rarr;</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="bridal" class="py-32 md:py-40 bg-darksec text-ivory relative overflow-hidden">
+            <!-- Decorative Subtle Noise & Gradient for depth -->
+            <div class="absolute inset-0 bg-gradient-to-b from-darksec via-wine/20 to-darksec pointer-events-none"></div>
+            
+            <div class="max-w-[90rem] mx-auto px-6 md:px-12 relative z-10">
+                <div class="grid lg:grid-cols-12 gap-16 items-center">
+                    <div class="lg:col-span-5 reveal-hidden">
+                        <span class="block text-[10px] tracking-[0.4em] text-gold uppercase mb-6">Signature Series</span>
+                        <h2 class="font-serif text-5xl md:text-6xl lg:text-7xl text-ivory mb-8 leading-[1.1]">The Bridal <br><i class="text-gold font-light">Collection</i></h2>
+                        <div class="w-12 h-px bg-gold/50 mb-8"></div>
+                        <p class="text-ivory/90 font-light text-lg mb-8 leading-relaxed">Intricate details. Meaningful traditions. Art that stays with you.</p>
+                        <p class="text-ivory/60 font-light mb-12 leading-relaxed max-w-md">Our signature bridal service is an immersive experience. We weave your personal love story, traditional motifs, and contemporary elegance into a flawless masterpiece that adorns you on your most special day.</p>
+                        <a href="#booking" onclick="prefillBooking('Signature Bridal Collection')" class="inline-block text-xs tracking-[0.2em] uppercase bg-transparent text-gold px-10 py-5 border border-gold/50 hover:bg-gold hover:text-darksec transition-all duration-500">Discuss Your Design</a>
+                    </div>
+                    
+                    <div class="lg:col-span-7 grid grid-cols-2 gap-4 md:gap-6 reveal-hidden">
+                        <div class="space-y-4 md:space-y-6 mt-16 md:mt-24">
+                            <div class="overflow-hidden group relative">
+                                <div class="absolute inset-0 border border-gold/20 z-10 pointer-events-none m-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                                <img src="https://images.pexels.com/photos/8232427/pexels-photo-8232427.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="Intricate bridal feet mehndi" class="w-full aspect-[4/5] object-cover img-zoom brightness-90 group-hover:brightness-100">
+                            </div>
+                            <div class="overflow-hidden group relative">
+                                <div class="absolute inset-0 border border-gold/20 z-10 pointer-events-none m-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                                <img src="https://images.pexels.com/photos/13713418/pexels-photo-13713418.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="Bridal hands full design detail" class="w-full aspect-square object-cover img-zoom brightness-90 group-hover:brightness-100">
+                            </div>
+                        </div>
+                        <div class="space-y-4 md:space-y-6">
+                            <div class="overflow-hidden group relative">
+                                <div class="absolute inset-0 border border-gold/20 z-10 pointer-events-none m-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                                <img src="https://images.pexels.com/photos/17133419/pexels-photo-17133419.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Bridal portrait applying mehndi" class="w-full aspect-[3/4] object-cover img-zoom brightness-90 group-hover:brightness-100">
+                            </div>
+                            <div class="p-8 md:p-12 border border-gold/20 flex flex-col items-center justify-center bg-wine/30 text-center aspect-square">
+                                <svg class="w-8 h-8 text-gold mb-6" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="0.5" d="M12 2L15 8L22 9L17 14L18.5 21L12 17.5L5.5 21L7 14L2 9L9 8L12 2Z"/></svg>
+                                <h4 class="font-serif text-3xl text-lightgold mb-3 italic">Bespoke</h4>
+                                <p class="text-[10px] tracking-[0.3em] uppercase text-ivory/50">Crafted exclusively for you</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="py-32 bg-ivory">
+            <div class="max-w-[90rem] mx-auto px-6 md:px-12">
+                <div class="flex flex-col lg:flex-row lg:items-end justify-between mb-16 gap-10 reveal-hidden">
+                    <div class="max-w-xl">
+                        <h2 class="font-serif text-5xl md:text-6xl text-burgundy mb-6 leading-tight">Curated <br><i class="text-gold font-light">Artistry</i></h2>
+                        <div class="w-16 h-px bg-gold mb-6"></div>
+                        <p class="text-warmgray font-light">Explore a selection of our finest work, blending traditional roots with contemporary elegance.</p>
+                    </div>
+                    <!-- Filters -->
+                    <div class="flex flex-wrap gap-6 lg:justify-end" id="gallery-filters" role="tablist">
+                        <button class="filter-btn text-xs tracking-[0.2em] uppercase font-medium text-burgundy link-underline active-filter" data-filter="all" role="tab" aria-selected="true">All</button>
+                        <button class="filter-btn text-xs tracking-[0.2em] uppercase text-warmgray hover:text-burgundy transition-colors link-underline" data-filter="bridal" role="tab" aria-selected="false">Bridal</button>
+                        <button class="filter-btn text-xs tracking-[0.2em] uppercase text-warmgray hover:text-burgundy transition-colors link-underline" data-filter="minimal" role="tab" aria-selected="false">Minimal</button>
+                        <button class="filter-btn text-xs tracking-[0.2em] uppercase text-warmgray hover:text-burgundy transition-colors link-underline" data-filter="traditional" role="tab" aria-selected="false">Traditional</button>
+                    </div>
+                </div>
+
+                <!-- Masonry Gallery Grid -->
+                <div class="masonry-grid" id="gallery-grid">
+                    <!-- Item 1 (Tall) -->
+                    <div class="masonry-item gallery-item cursor-pointer group relative overflow-hidden reveal-hidden" data-category="bridal">
+                        <img src="https://images.pexels.com/photos/36354616/pexels-photo-36354616.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="Intricate bridal hands full coverage" class="w-full h-auto object-cover transition-transform duration-1000 group-hover:scale-105" loading="lazy">
+                        <div class="absolute inset-0 bg-darksec/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col items-center justify-center p-6 text-center">
+                            <span class="text-gold font-serif text-2xl italic mb-2">Bridal Canvas</span>
+                            <span class="text-ivory text-[10px] tracking-[0.2em] uppercase">View Details</span>
+                        </div>
+                    </div>
+                    <!-- Item 2 (Square) -->
+                    <div class="masonry-item gallery-item cursor-pointer group relative overflow-hidden reveal-hidden" data-category="traditional">
+                        <img src="https://images.pexels.com/photos/36216937/pexels-photo-36216937.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="Traditional Indian motifs palm" class="w-full aspect-square object-cover transition-transform duration-1000 group-hover:scale-105" loading="lazy">
+                        <div class="absolute inset-0 bg-darksec/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col items-center justify-center p-6 text-center">
+                            <span class="text-gold font-serif text-2xl italic mb-2">Heritage Motifs</span>
+                            <span class="text-ivory text-[10px] tracking-[0.2em] uppercase">View Details</span>
+                        </div>
+                    </div>
+                    <!-- Item 3 (Tall) -->
+                    <div class="masonry-item gallery-item cursor-pointer group relative overflow-hidden reveal-hidden" data-category="minimal">
+                        <img src="https://images.pexels.com/photos/33452609/pexels-photo-33452609.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="Minimal engagement henna backhand" class="w-full h-auto object-cover transition-transform duration-1000 group-hover:scale-105" loading="lazy">
+                        <div class="absolute inset-0 bg-darksec/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col items-center justify-center p-6 text-center">
+                            <span class="text-gold font-serif text-2xl italic mb-2">Modern Minimal</span>
+                            <span class="text-ivory text-[10px] tracking-[0.2em] uppercase">View Details</span>
+                        </div>
+                    </div>
+                    <!-- Item 4 (Square) -->
+                    <div class="masonry-item gallery-item cursor-pointer group relative overflow-hidden reveal-hidden" data-category="bridal">
+                        <img src="https://images.pexels.com/photos/18066564/pexels-photo-18066564.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="Bridal feet with heavy jewelry and henna" class="w-full aspect-square object-cover transition-transform duration-1000 group-hover:scale-105" loading="lazy">
+                        <div class="absolute inset-0 bg-darksec/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col items-center justify-center p-6 text-center">
+                            <span class="text-gold font-serif text-2xl italic mb-2">Bridal Elegance</span>
+                            <span class="text-ivory text-[10px] tracking-[0.2em] uppercase">View Details</span>
+                        </div>
+                    </div>
+                    <!-- Item 5 (Tall) -->
+                    <div class="masonry-item gallery-item cursor-pointer group relative overflow-hidden reveal-hidden" data-category="traditional">
+                        <img src="https://images.pexels.com/photos/8232427/pexels-photo-8232427.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="Traditional mandala design" class="w-full h-auto object-cover transition-transform duration-1000 group-hover:scale-105" loading="lazy">
+                        <div class="absolute inset-0 bg-darksec/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col items-center justify-center p-6 text-center">
+                            <span class="text-gold font-serif text-2xl italic mb-2">Sacred Geometry</span>
+                            <span class="text-ivory text-[10px] tracking-[0.2em] uppercase">View Details</span>
+                        </div>
+                    </div>
+                    <!-- Item 6 (Square) -->
+                    <div class="masonry-item gallery-item cursor-pointer group relative overflow-hidden reveal-hidden" data-category="bridal">
+                        <img src="https://images.pexels.com/photos/33088135/pexels-photo-33088135.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="Bridal hands close up with rings" class="w-full aspect-square object-cover transition-transform duration-1000 group-hover:scale-105" loading="lazy">
+                        <div class="absolute inset-0 bg-darksec/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col items-center justify-center p-6 text-center">
+                            <span class="text-gold font-serif text-2xl italic mb-2">Timeless Adornment</span>
+                            <span class="text-ivory text-[10px] tracking-[0.2em] uppercase">View Details</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lightbox Modal -->
+        <div id="lightbox" class="fixed inset-0 z-[100] bg-darksec/98 opacity-0 pointer-events-none flex items-center justify-center backdrop-blur-md" role="dialog" aria-modal="true" aria-label="Image Gallery">
+            <button id="lightbox-close" class="absolute top-6 right-6 md:top-10 md:right-10 text-ivory/70 hover:text-gold transition-colors focus:outline-none p-2" aria-label="Close Lightbox">
+                <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1"><path stroke-linecap="square" stroke-linejoin="miter" d="M6 18L18 6M6 6l12 12" /></svg>
+            </button>
+            <button id="lightbox-prev" class="absolute left-2 md:left-10 top-1/2 transform -translate-y-1/2 text-ivory/70 hover:text-gold transition-colors focus:outline-none p-4" aria-label="Previous Image">
+                <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1"><path stroke-linecap="square" stroke-linejoin="miter" d="M15 19l-7-7 7-7" /></svg>
+            </button>
+            <div class="max-w-5xl max-h-[85vh] px-4 w-full flex justify-center items-center">
+                <img id="lightbox-img" src="" alt="Gallery Image High Resolution" class="max-w-full max-h-[85vh] object-contain shadow-2xl border border-white/5">
+            </div>
+            <button id="lightbox-next" class="absolute right-2 md:right-10 top-1/2 transform -translate-y-1/2 text-ivory/70 hover:text-gold transition-colors focus:outline-none p-4" aria-label="Next Image">
+                <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1"><path stroke-linecap="square" stroke-linejoin="miter" d="M9 5l7 7-7 7" /></svg>
+            </button>
+        </div>
+
+        <section class="py-24 md:py-32 bg-lightsec border-t border-gold/10">
+            <div class="max-w-[90rem] mx-auto px-6 md:px-12">
+                <div class="text-center mb-20 reveal-hidden">
+                    <span class="block text-[10px] tracking-[0.3em] text-gold uppercase mb-4">How We Work</span>
+                    <h2 class="font-serif text-4xl md:text-5xl text-burgundy mb-6">The Artistic <i class="font-light italic text-gold">Process</i></h2>
+                    <div class="w-12 h-px bg-burgundy/20 mx-auto"></div>
+                </div>
+
+                <div class="grid md:grid-cols-4 gap-12 md:gap-8 text-center relative max-w-5xl mx-auto">
+                    <!-- Connecting line for desktop -->
+                    <div class="hidden md:block absolute top-8 left-[12.5%] right-[12.5%] h-px bg-gold/30 z-0"></div>
+                    
+                    <!-- Steps -->
+                    <div class="relative z-10 reveal-hidden">
+                        <div class="w-16 h-16 rounded-full bg-ivory border border-gold/50 flex items-center justify-center mx-auto mb-6 text-gold font-serif text-2xl italic shadow-lg shadow-gold/5">1</div>
+                        <h3 class="font-serif text-2xl text-burgundy mb-4">Discover</h3>
+                        <p class="text-sm text-warmgray font-light px-4">Discuss the occasion, preferred style, and personal preferences.</p>
+                    </div>
+                    <div class="relative z-10 reveal-hidden" style="transition-delay: 0.1s;">
+                        <div class="w-16 h-16 rounded-full bg-ivory border border-gold/50 flex items-center justify-center mx-auto mb-6 text-gold font-serif text-2xl italic shadow-lg shadow-gold/5">2</div>
+                        <h3 class="font-serif text-2xl text-burgundy mb-4">Personalize</h3>
+                        <p class="text-sm text-warmgray font-light px-4">Explore suitable patterns, meaningful motifs, and design details.</p>
+                    </div>
+                    <div class="relative z-10 reveal-hidden" style="transition-delay: 0.2s;">
+                        <div class="w-16 h-16 rounded-full bg-ivory border border-gold/50 flex items-center justify-center mx-auto mb-6 text-gold font-serif text-2xl italic shadow-lg shadow-gold/5">3</div>
+                        <h3 class="font-serif text-2xl text-burgundy mb-4">Create</h3>
+                        <p class="text-sm text-warmgray font-light px-4">Apply the design with attention to precision, symmetry, and detail.</p>
+                    </div>
+                    <div class="relative z-10 reveal-hidden" style="transition-delay: 0.3s;">
+                        <div class="w-16 h-16 rounded-full bg-ivory border border-gold/50 flex items-center justify-center mx-auto mb-6 text-gold font-serif text-2xl italic shadow-lg shadow-gold/5">4</div>
+                        <h3 class="font-serif text-2xl text-burgundy mb-4">Celebrate</h3>
+                        <p class="text-sm text-warmgray font-light px-4">Complete the experience with thoughtful finishing touches.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="py-32 bg-ivory overflow-hidden">
+            <div class="max-w-[90rem] mx-auto px-6 md:px-12">
+                <div class="grid lg:grid-cols-2 gap-16 items-center">
+                    <div class="reveal-hidden">
+                        <h2 class="font-serif text-5xl md:text-6xl text-burgundy mb-6 leading-tight">Words of <br><i class="font-light text-gold italic">Love</i></h2>
+                        <div class="w-16 h-px bg-gold mb-8"></div>
+                        <p class="text-warmgray font-light text-lg mb-10 max-w-md">Hearing from our beautiful brides is the greatest reward for our artistry.</p>
+                        
+                        <!-- Static Testimonial (Placeholder based on instruction) -->
+                        <div class="relative border-l-2 border-gold/30 pl-8 py-2">
+                            <svg class="absolute -left-3 -top-4 w-12 h-12 text-gold/20" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+                            <p class="font-serif text-2xl md:text-3xl text-charcoal italic leading-relaxed mb-6">"The detail and patience put into my bridal mehndi was unbelievable. It wasn't just henna; it was a masterpiece that made me feel truly royal on my special day."</p>
+                            <div>
+                                <h4 class="text-xs tracking-[0.2em] uppercase text-burgundy font-medium">Priya &middot; Bride</h4>
+                                <p class="text-xs text-warmgray mt-1">Signature Bridal Collection</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="reveal-hidden relative">
+                         <div class="aspect-[4/5] md:aspect-square w-full md:w-[80%] ml-auto editorial-frame dark-border bg-champagne">
+                            <img src="https://images.pexels.com/photos/17133419/pexels-photo-17133419.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="Happy bride with beautiful mehndi" class="w-full h-full object-cover img-zoom">
+                        </div>
+                        <!-- Abstract shape -->
+                        <div class="absolute -bottom-10 -left-10 w-40 h-40 bg-lightsec rounded-full mix-blend-multiply opacity-50 blur-3xl pointer-events-none"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="booking" class="py-32 bg-lightsec border-y border-gold/20 relative">
+            <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-gold/30 to-transparent"></div>
+            <div class="max-w-4xl mx-auto px-6 md:px-12 relative z-10">
+                <div class="text-center mb-16 reveal-hidden">
+                    <h2 class="font-serif text-5xl md:text-6xl text-burgundy mb-6">Let's Create Something <br><i class="font-light text-gold italic">Unforgettable.</i></h2>
+                    <p class="text-warmgray font-light text-lg">Tell us about your celebration, and let's explore a design that feels personal to you.</p>
+                </div>
+
+                <div class="bg-ivory p-8 md:p-16 border border-gold/20 shadow-xl shadow-wine/5 reveal-hidden relative">
+                    <!-- Subtle corner accents -->
+                    <div class="absolute top-0 left-0 w-4 h-4 border-t border-l border-gold/50"></div>
+                    <div class="absolute top-0 right-0 w-4 h-4 border-t border-r border-gold/50"></div>
+                    <div class="absolute bottom-0 left-0 w-4 h-4 border-b border-l border-gold/50"></div>
+                    <div class="absolute bottom-0 right-0 w-4 h-4 border-b border-r border-gold/50"></div>
+
+                    <form id="booking-form" class="space-y-8">
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div class="relative group">
+                                <label for="name" class="block text-[10px] tracking-[0.2em] uppercase text-charcoal mb-2">Full Name *</label>
+                                <input type="text" id="name" required class="w-full bg-transparent border-b border-charcoal/20 py-3 focus:outline-none focus:border-burgundy transition-colors font-light text-charcoal placeholder-warmgray/40" placeholder="Jane Doe">
+                            </div>
+                            <div class="relative group">
+                                <label for="phone" class="block text-[10px] tracking-[0.2em] uppercase text-charcoal mb-2">WhatsApp Number *</label>
+                                <input type="tel" id="phone" required class="w-full bg-transparent border-b border-charcoal/20 py-3 focus:outline-none focus:border-burgundy transition-colors font-light text-charcoal placeholder-warmgray/40" placeholder="+1 234 567 8900">
+                            </div>
+                        </div>
+
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div class="relative group">
+                                <label for="date" class="block text-[10px] tracking-[0.2em] uppercase text-charcoal mb-2">Event Date *</label>
+                                <input type="date" id="date" required class="w-full bg-transparent border-b border-charcoal/20 py-3 focus:outline-none focus:border-burgundy transition-colors font-light text-charcoal text-sm cursor-pointer">
+                            </div>
+                            <div class="relative group">
+                                <label for="service" class="block text-[10px] tracking-[0.2em] uppercase text-charcoal mb-2">Preferred Service *</label>
+                                <select id="service" required class="w-full bg-transparent border-b border-charcoal/20 py-3 focus:outline-none focus:border-burgundy transition-colors font-light text-charcoal text-sm appearance-none rounded-none cursor-pointer">
+                                    <option value="" disabled selected>Select a Service</option>
+                                    <option value="Bridal Mehndi">Bridal Mehndi</option>
+                                    <option value="Signature Bridal Collection">Signature Bridal Collection</option>
+                                    <option value="Engagement Mehndi">Engagement Mehndi</option>
+                                    <option value="Festive & Party Mehndi">Festive & Party Mehndi</option>
+                                    <option value="Custom Design Consultation">Custom Design Consultation</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="relative group">
+                            <label for="location" class="block text-[10px] tracking-[0.2em] uppercase text-charcoal mb-2">Event Location / Venue</label>
+                            <input type="text" id="location" class="w-full bg-transparent border-b border-charcoal/20 py-3 focus:outline-none focus:border-burgundy transition-colors font-light text-charcoal placeholder-warmgray/40" placeholder="City or Venue Name">
+                        </div>
+
+                        <div class="relative group">
+                            <label for="message" class="block text-[10px] tracking-[0.2em] uppercase text-charcoal mb-2">Additional Details</label>
+                            <textarea id="message" rows="3" class="w-full bg-transparent border-b border-charcoal/20 py-3 focus:outline-none focus:border-burgundy transition-colors font-light text-charcoal placeholder-warmgray/40 resize-none" placeholder="Tell us about your style preferences, motifs, or special requests..."></textarea>
+                        </div>
+
+                        <div class="pt-8 text-center">
+                            <button type="submit" class="inline-block bg-burgundy text-ivory text-xs tracking-[0.2em] uppercase px-12 py-5 hover:bg-wine transition-all duration-500 shadow-lg shadow-burgundy/20 w-full md:w-auto relative overflow-hidden group">
+                                <span class="relative z-10 flex items-center justify-center gap-3">
+                                    Send Enquiry via WhatsApp
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.888-.788-1.487-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+                                </span>
+                                <div class="absolute inset-0 bg-charcoal transform scale-y-0 origin-bottom group-hover:scale-y-100 transition-transform duration-500 ease-elegant"></div>
+                            </button>
+                            <p class="text-[10px] text-warmgray mt-6 uppercase tracking-wider">Your appointment is confirmed only after the artist responds.</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-darksec text-ivory pt-24 pb-12 relative overflow-hidden">
+        <!-- Delicate background motif -->
+        <svg class="absolute top-0 right-0 w-96 h-96 text-wine/40 transform translate-x-1/3 -translate-y-1/3 pointer-events-none" viewBox="0 0 100 100" fill="none"><path d="M50 0 C 50 50, 100 50, 100 50 C 100 50, 50 50, 50 100 C 50 100, 50 50, 0 50 C 0 50, 50 50, 50 0 Z" fill="currentColor"/></svg>
+
+        <div class="max-w-[90rem] mx-auto px-6 md:px-12 relative z-10">
+            <div class="grid md:grid-cols-12 gap-12 lg:gap-8 mb-20 text-center md:text-left">
+                <!-- Brand -->
+                <div class="md:col-span-5 lg:col-span-4 flex flex-col items-center md:items-start">
+                    <h3 class="font-serif text-4xl tracking-[0.15em] text-lightgold uppercase mb-6">Anaya</h3>
+                    <p class="text-ivory/60 font-light text-sm leading-relaxed max-w-sm">Celebrating tradition through the timeless art of mehndi. Crafting bespoke bridal designs and elegant henna artistry with uncompromising luxury.</p>
+                </div>
+                
+                <!-- Spacer for layout balance -->
+                <div class="hidden lg:block lg:col-span-2"></div>
+
+                <!-- Quick Links -->
+                <div class="md:col-span-3 lg:col-span-3">
+                    <h4 class="font-serif text-2xl text-lightgold mb-6 italic">Explore</h4>
+                    <ul class="space-y-4">
+                        <li><a href="#about" class="text-xs tracking-[0.1em] uppercase font-light text-ivory/70 hover:text-gold transition-colors">The Artist</a></li>
+                        <li><a href="#services" class="text-xs tracking-[0.1em] uppercase font-light text-ivory/70 hover:text-gold transition-colors">Services</a></li>
+                        <li><a href="#bridal" class="text-xs tracking-[0.1em] uppercase font-light text-ivory/70 hover:text-gold transition-colors">Bridal Couture</a></li>
+                        <li><a href="#gallery" class="text-xs tracking-[0.1em] uppercase font-light text-ivory/70 hover:text-gold transition-colors">Portfolio</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div class="md:col-span-4 lg:col-span-3">
+                    <h4 class="font-serif text-2xl text-lightgold mb-6 italic">Atelier</h4>
+                    <ul class="space-y-4 text-xs tracking-[0.1em] uppercase font-light text-ivory/70">
+                        <li><span id="config-city">Mumbai, India</span></li>
+                        <li><a href="mailto:hello@anayaartistry.com" class="hover:text-gold transition-colors lowercase tracking-normal text-sm">hello@anayaartistry.com</a></li>
+                        <li class="pt-4">
+                            <a href="#" id="config-instagram" class="inline-flex items-center gap-3 text-gold hover:text-ivory transition-colors">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                                <span>Follow Portfolio</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gold/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-6">
+                <p class="text-[10px] text-ivory/40 uppercase tracking-widest">&copy; <span id="current-year"></span> Anaya Artistry. All rights reserved.</p>
+                <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="text-[10px] tracking-[0.2em] uppercase text-gold hover:text-ivory transition-colors flex items-center gap-3">
+                    Back to top
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M5 10l7-7m0 0l7 7m-7-7v18"/></svg>
+                </button>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="#" id="floating-wa" target="_blank" rel="noopener noreferrer" class="fixed bottom-6 right-6 z-[60] bg-whatsapp text-white p-4 rounded-full shadow-2xl shadow-whatsapp/20 hover:scale-110 hover:-translate-y-1 transition-all duration-300" aria-label="Chat on WhatsApp">
+        <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.888-.788-1.487-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+    </a>
+
+    <!-- Simple Validation Notice (Fallback for required fields if needed, styled minimally) -->
+    <dialog id="message-modal" class="bg-ivory border border-gold/30 p-10 shadow-2xl w-11/12 max-w-md m-auto text-center backdrop-blur-md outline-none">
+        <h3 class="font-serif text-3xl text-burgundy mb-4 italic" id="modal-title">Notice</h3>
+        <p class="text-warmgray font-light mb-8" id="modal-text">Message goes here.</p>
+        <button id="close-modal" class="text-[10px] tracking-[0.2em] uppercase border border-burgundy text-burgundy px-8 py-3 hover:bg-burgundy hover:text-ivory transition-colors">Close</button>
+    </dialog>
+
+    <script>
+        // 1. Central Configuration
+        const BUSINESS_CONFIG = {
+            whatsappNumber: '12345678900', // Update with actual number
+            instagramUrl: 'https://instagram.com/placeholder',
+            city: 'Mumbai, India'
+        };
+
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+        document.getElementById('config-city').textContent = BUSINESS_CONFIG.city;
+        document.getElementById('config-instagram').href = BUSINESS_CONFIG.instagramUrl;
+        document.getElementById('floating-wa').href = `https://wa.me/${BUSINESS_CONFIG.whatsappNumber}?text=${encodeURIComponent("Hello! I'm interested in booking a luxury mehndi consultation.")}`;
+
+        // 2. Premium Intro Animation Logic
+        const runIntroAnimation = () => {
+            const introPlayed = sessionStorage.getItem('mehndiIntroLuxury');
+            const introOverlay = document.getElementById('intro-overlay');
+            const title = document.getElementById('intro-title');
+            const divider = document.getElementById('intro-divider');
+            const tagline = document.getElementById('intro-tagline');
+
+            if (introPlayed) {
+                introOverlay.style.display = 'none';
+            } else {
+                document.body.style.overflow = 'hidden'; 
+                
+                setTimeout(() => title.classList.remove('opacity-0'), 1200);
+                setTimeout(() => divider.classList.remove('opacity-0'), 1500);
+                setTimeout(() => tagline.classList.remove('opacity-0'), 1800);
+                
+                setTimeout(() => {
+                    introOverlay.style.opacity = '0';
+                    introOverlay.style.pointerEvents = 'none';
+                    document.body.style.overflow = ''; 
+                    sessionStorage.setItem('mehndiIntroLuxury', 'true');
+                    setTimeout(() => introOverlay.style.display = 'none', 1200); 
+                }, 3500);
+            }
+        };
+        runIntroAnimation();
+
+        // 3. Elegant Header Scroll & Mobile Menu
+        const header = document.getElementById('main-header');
+        const mobileToggle = document.getElementById('mobile-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+        const hamburgerLines = mobileToggle.querySelectorAll('span');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.remove('bg-transparent', 'py-6');
+                header.classList.add('bg-ivory/95', 'backdrop-blur-md', 'py-4', 'shadow-sm', 'border-b', 'border-gold/20');
+            } else {
+                header.classList.add('bg-transparent', 'py-6');
+                header.classList.remove('bg-ivory/95', 'backdrop-blur-md', 'py-4', 'shadow-sm', 'border-b', 'border-gold/20');
+            }
+        }, { passive: true });
+
+        const toggleMenu = () => {
+            mobileMenu.classList.toggle('menu-open');
+            document.body.classList.toggle('overflow-hidden');
+            const isOpen = mobileMenu.classList.contains('menu-open');
+            
+            // Hamburger animation
+            if(isOpen) {
+                hamburgerLines[0].classList.add('rotate-45', 'translate-y-[7px]');
+                hamburgerLines[1].classList.add('opacity-0');
+                hamburgerLines[2].classList.add('-rotate-45', '-translate-y-[7px]');
+            } else {
+                hamburgerLines[0].classList.remove('rotate-45', 'translate-y-[7px]');
+                hamburgerLines[1].classList.remove('opacity-0');
+                hamburgerLines[2].classList.remove('-rotate-45', '-translate-y-[7px]');
+            }
+        };
+
+        mobileToggle.addEventListener('click', toggleMenu);
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                if(mobileMenu.classList.contains('menu-open')) toggleMenu();
+            });
+        });
+
+        // 4. Scroll Reveal (Intersection Observer)
+        const revealElements = document.querySelectorAll('.reveal-hidden');
+        const revealObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('reveal-active');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1, rootMargin: "0px 0px -50px 0px" });
+
+        revealElements.forEach(el => revealObserver.observe(el));
+
+        // 5. Masonry Gallery Filtering
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const galleryItems = document.querySelectorAll('.gallery-item');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterBtns.forEach(b => {
+                    b.classList.remove('text-burgundy', 'active-filter');
+                    b.classList.add('text-warmgray');
+                    b.setAttribute('aria-selected', 'false');
+                });
+                btn.classList.add('text-burgundy', 'active-filter');
+                btn.classList.remove('text-warmgray');
+                btn.setAttribute('aria-selected', 'true');
+
+                const filterValue = btn.getAttribute('data-filter');
+
+                galleryItems.forEach(item => {
+                    if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+                        item.style.display = 'block';
+                        setTimeout(() => item.classList.remove('opacity-0', 'scale-95'), 50);
+                    } else {
+                        item.classList.add('opacity-0', 'scale-95');
+                        setTimeout(() => item.style.display = 'none', 500);
+                    }
+                });
+            });
+        });
+
+        // 6. Accessible Lightbox
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        const closeBtn = document.getElementById('lightbox-close');
+        const nextBtn = document.getElementById('lightbox-next');
+        const prevBtn = document.getElementById('lightbox-prev');
+        
+        let currentImages = [];
+        let currentIndex = 0;
+
+        const updateLightboxNav = () => {
+            const visibleItems = Array.from(galleryItems).filter(item => item.style.display !== 'none');
+            currentImages = visibleItems.map(item => item.querySelector('img').src);
+        };
+
+        const openLightbox = (index) => {
+            updateLightboxNav();
+            currentIndex = index;
+            lightboxImg.src = currentImages[currentIndex];
+            lightbox.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        };
+
+        const closeLightbox = () => {
+            lightbox.classList.remove('active');
+            document.body.style.overflow = '';
+            setTimeout(() => lightboxImg.src = '', 400);
+        };
+
+        const showNext = () => {
+            currentIndex = (currentIndex + 1) % currentImages.length;
+            lightboxImg.style.opacity = 0;
+            setTimeout(() => {
+                lightboxImg.src = currentImages[currentIndex];
+                lightboxImg.style.opacity = 1;
+            }, 200);
+        };
+
+        const showPrev = () => {
+            currentIndex = (currentIndex - 1 + currentImages.length) % currentImages.length;
+            lightboxImg.style.opacity = 0;
+            setTimeout(() => {
+                lightboxImg.src = currentImages[currentIndex];
+                lightboxImg.style.opacity = 1;
+            }, 200);
+        };
+
+        galleryItems.forEach(item => {
+            item.addEventListener('click', () => {
+                updateLightboxNav();
+                const imgSrc = item.querySelector('img').src;
+                const index = currentImages.indexOf(imgSrc);
+                if(index > -1) openLightbox(index);
+            });
+        });
+
+        closeBtn.addEventListener('click', closeLightbox);
+        nextBtn.addEventListener('click', (e) => { e.stopPropagation(); showNext(); });
+        prevBtn.addEventListener('click', (e) => { e.stopPropagation(); showPrev(); });
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox || e.target.parentElement === lightbox) closeLightbox();
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (!lightbox.classList.contains('active')) return;
+            if (e.key === 'Escape') closeLightbox();
+            if (e.key === 'ArrowRight') showNext();
+            if (e.key === 'ArrowLeft') showPrev();
+        });
+
+        // 7. Booking Form & Validation Modal
+        const modal = document.getElementById('message-modal');
+        const closeModalBtn = document.getElementById('close-modal');
+        
+        const showModal = (title, text) => {
+            document.getElementById('modal-title').textContent = title;
+            document.getElementById('modal-text').textContent = text;
+            modal.showModal();
+        };
+
+        closeModalBtn.addEventListener('click', () => modal.close());
+
+        window.prefillBooking = (serviceName) => {
+            const select = document.getElementById('service');
+            select.value = serviceName;
+            document.getElementById('booking').scrollIntoView({ behavior: 'smooth' });
+        };
+
+        const bookingForm = document.getElementById('booking-form');
+        bookingForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            const name = document.getElementById('name').value.trim();
+            const date = document.getElementById('date').value;
+            const service = document.getElementById('service').value;
+            const location = document.getElementById('location').value.trim();
+            const message = document.getElementById('message').value.trim();
+
+            if (!name || !date || !service) {
+                showModal('Incomplete Details', 'Please fill in all required fields marked with an asterisk (*).');
+                return;
+            }
+
+            // Constructing an elegant WhatsApp Message
+            let waText = `*New Booking Enquiry - Anaya Artistry*%0A%0A`;
+            waText += `*Name:* ${name}%0A`;
+            waText += `*Service Requested:* ${service}%0A`;
+            waText += `*Date:* ${date}%0A`;
+            if (location) waText += `*Location:* ${location}%0A`;
+            if (message) waText += `*Details:* ${message}%0A%0A`;
+            waText += `Looking forward to your response!`;
+
+            const waUrl = `https://wa.me/${BUSINESS_CONFIG.whatsappNumber}?text=${waText}`;
+            window.open(waUrl, '_blank');
+        });
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exclusive Mehandi Collections</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Glassmorphism Utilities */
+    .glass-panel {
+      background: rgba(255, 255, 255, 0.03);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .text-gradient {
+      background: linear-gradient(to right, #10b981, #06b6d4);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  </style>
+</head>
+<body class="bg-slate-950 text-white min-h-screen relative overflow-x-hidden font-sans">
+  
+  <!-- Ambient Glowing Orbs -->
+  <div class="absolute top-0 left-1/4 w-96 h-96 bg-emerald-600/20 rounded-full mix-blend-screen filter blur-[120px] opacity-60 z-0"></div>
+  <div class="absolute bottom-0 right-1/4 w-96 h-96 bg-cyan-600/20 rounded-full mix-blend-screen filter blur-[120px] opacity-60 z-0"></div>
+
+  <!-- Main Content -->
+  <main class="relative z-10 max-w-5xl mx-auto px-6 py-16">
+    
+    <!-- Header Section -->
+    <header class="text-center mb-16">
+      <h1 class="text-4xl md:text-6xl font-bold mb-4 tracking-tight">
+        Exclusive <span class="text-gradient">Mehandi Collections</span>
+      </h1>
+      <p class="text-slate-400 text-lg max-w-2xl mx-auto">
+        Please browse our curated templates below. Click "Live Preview" to see the full layout, or "Select Design" when you are ready to proceed with your booking.
+      </p>
+    </header>
+
+    <!-- Template Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      
+      <!-- Template 1: Rahul Mehandi Art -->
+      <div class="glass-panel rounded-2xl p-6 transition-all duration-300 hover:-translate-y-2 hover:border-emerald-500/50 hover:shadow-[0_0_30px_rgba(16,185,129,0.15)] flex flex-col">
+        <div class="rounded-xl overflow-hidden mb-6 h-64 relative group">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmMeDbPN1nLUlNgsb_BurPiSF2MdwvCnoV_7V64e17aY-hGvwN38UtgMkW&s=10" alt="Intricate bridal mehndi preview" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 to-transparent"></div>
+        </div>
+        <h2 class="text-2xl font-semibold mb-2">Rahul Mehandi Art</h2>
+        <p class="text-slate-400 mb-8 flex-grow">A traditional, intricate bridal design layout featuring heavy motifs and classic styling.</p>
+        
+        <div class="flex gap-4">
+          <a href="/rahul_mehandi_art/" class="flex-1 text-center py-3 px-4 rounded-lg bg-white/5 border border-white/10 hover:bg-white/10 transition-colors">
+            Live Preview
+          </a>
+          <button onclick="alert('Client selected Rahul Mehandi Art')" class="flex-1 text-center py-3 px-4 rounded-lg bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-semibold transition-colors">
+            Select Design
+          </button>
+        </div>
+      </div>
+
+      <!-- Template 2: AAnya Mehandi Art -->
+      <div class="glass-panel rounded-2xl p-6 transition-all duration-300 hover:-translate-y-2 hover:border-cyan-500/50 hover:shadow-[0_0_30px_rgba(6,182,212,0.15)] flex flex-col">
+        <div class="rounded-xl overflow-hidden mb-6 h-64 relative group">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCKzwONKrmqrSOHF-pT0YYhPCLI-vxCuCsX4DRC3RV1BN5jAojmp61bjrE&s=10" alt="Modern minimalist mehndi preview" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 to-transparent"></div>
+        </div>
+        <h2 class="text-2xl font-semibold mb-2">AAnya Mehandi Art</h2>
+        <p class="text-slate-400 mb-8 flex-grow">A modern, minimalist aesthetic focusing on geometric patterns and elegant negative space.</p>
+        
+        <div class="flex gap-4">
+          <a href="/template-two/" class="flex-1 text-center py-3 px-4 rounded-lg bg-white/5 border border-white/10 hover:bg-white/10 transition-colors">
+            Live Preview
+          </a>
+          <button onclick="alert('Client selected AAnya Mehandi Art')" class="flex-1 text-center py-3 px-4 rounded-lg bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-semibold transition-colors">
+            Select Design
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </main>
+</body>
+</html>
